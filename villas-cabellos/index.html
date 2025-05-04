@@ -4,45 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Villa's Cabellos</title>
-  <style>
-    .modal {
-      position: fixed;
-      z-index: 10;
-      left: 0; top: 0;
-      width: 100%; height: 100%;
-      background-color: rgba(0,0,0,0.5);
-      display: none;
-    }
-  
-    .modal-conteudo {
-      background-color: #fff;
-      margin: 10% auto;
-      padding: 20px;
-      width: 80%;
-      max-width: 500px;
-      border-radius: 8px;
-      position: relative;
-    }
-  
-    .fechar {
-      position: absolute;
-      right: 15px;
-      top: 10px;
-      font-size: 24px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
   
     
 </head>
 
 <body>
-
   <header>
     <nav>
-      <div class="logo">
-        <img src="logo.png" alt="Logo" width="100" height="100">
-      </div>
+      <a class="logo" href="#banner-principal">
+        <img src="logo.png" alt="Logo">
+      </a>
       <ul>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Nossos Serviços</a></li>
@@ -51,203 +23,97 @@
       </ul>
     </nav>
   </header>
-  <hr
   <main>
 
-    <section id="inicio">
+    <section id="banner-principal">
       <h1>Beleza<br>Em um<br>Só Lugar</h1>
-      <img src="" alt="Banner Principal" width="100%" height="auto">
     </section>
-
-    <div style="height: 500px;">
-        <!-- Simulando um espaço entre as seções -->
-    </div>
-    
-    <hr>
     <section id="sobre">
       <h2>Quem somos?</h2>
       
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
 
-    <div class="destaques">
-        <article>
-          <figure>
-            <img src="pexels-rdne-7755542.jpg" alt="Placeholder">
-          </figure>
-        </article>
-    
-        <article>
-          <figure>
-            <img src="pexels-rdne-7755542.jpg" alt="Placeholder">
-          </figure>
-        </article>
-    
-        <article>
-          <figure>
-            <img src="pexels-rdne-7755542.jpg" alt="Placeholder">
-          </figure>
-        </article>
+      <div class="carrossel">
+        <ul class="destaques">
+          <li>
+              <img src="assets/img/1.jpg" alt="Imagem di salão" class="img-destaque">
+          </li>
+          <li>
+              <img src="assets/img/2.jpg" alt="Imagem do salão" class="img-destaque">
+          </li>
+          <li>
+              <img src="assets/img/3.jpg" alt="Imagem do salão" class="img-destaque">
+          </li>
+        </ul>
       </div>
-
-      <div class="transformacoes">
-        <h2>Transformações</h2>
-        <article>
-          <figure>
-            <img src="pexels-rdne-7755542.jpg" alt="Placeholder">
-          </figure>
-        </article>
-    
-        <article>
-          <figure>
-            <img src="pexels-rdne-7755542.jpg" alt="Placeholder">
-          </figure>
-        </article>
-    
-        <article>
-          <figure>
-            <img src="pexels-rdne-7755542.jpg" alt="Placeholder">
-          </figure>
-        </article>
-
-        <article>
-            <figure>
-              <img src="pexels-rdne-7755542.jpg" alt="Placeholder">
-            </figure>
-          </article>
-      
-        <article>
-            <figure>
-              <img src="pexels-rdne-7755542.jpg" alt="Placeholder">
-            </figure>
-        </article>
-      
-        <article>
-            <figure>
-              <img src="pexels-rdne-7755542.jpg" alt="Placeholder">
-            </figure>
-        </article>
-      </div>
-    
 
     </section>
 
-    <div style="height: 300px;">
-        <!-- Simulando um espaço entre as seções -->
-    </div>
-
-    <hr>
+      <section class="transformacoes">
+        <h2>Transformações</h2>
+        <div class="galeria">
+            <img src="assets/img/pexels.jpg" alt="Placeholder">
+            <img src="assets/img/pexels.jpg" alt="Placeholder">
+            <img src="assets/img/pexels.jpg" alt="Placeholder">
+            <img src="assets/img/pexels.jpg" alt="Placeholder">
+            <img src="assets/img/pexels.jpg" alt="Placeholder">
+            <img src="assets/img/pexels.jpg" alt="Placeholder">
+        </div>
+      </section>
     <section id="servicos">
       <h2>Nossos Serviços</h2>
 
-        <div class="grade-servicos">
-          <article>
-            <figure>
-                <button onclick="abrirModal('modal-procedimento-1')">
-              <img src="procedimento.png" alt="Nome Procedimento">
-              <figcaption>Nome Procedimento</figcaption>
-                </button>
-            </figure>
-            <div id="modal-procedimento-1" class="modal" style="display: none;">
-                <div class="modal-conteudo">
-                    <span class="fechar" onclick="fecharModal('modal-procedimento-1')">&times;</span>
-                    <img src="procedimento.png" alt="Nome Procedimento">
-                    <h3>Nome procedimento</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor tempora, dignissimos inventore numquam nam iste veritatis ipsa illum maiores ea et recusandae ducimus doloremque suscipit. Laborum et nam officiis!
-                    </p>
-                </div>
-            </div>
-          </article>
+        <ul id="grade-servicos">
+          <li>
+            <button onclick="abrirModal(0)">
+              <figure>
+                <img src="procedimento.png" alt="Nome Procedimento">
+                <figcaption>Nome Procedimento</figcaption>
+              </figure>
+            </button>
+          </li>
 
-          <article>
-            <figure>
-                <button onclick="abrirModal('modal-procedimento-2')">
-              <img src="procedimento.png" alt="Nome Procedimento">
-              <figcaption>Nome Procedimento</figcaption>
-                </button>
-            </figure>
-            <div id="modal-procedimento-2" class="modal" style="display: none;">
-                <div class="modal-conteudo">
-                    <span class="fechar" onclick="fecharModal('modal-procedimento-2')">&times;</span>
-                    <img src="procedimento.png" alt="Nome Procedimento">
-                    <h3>Nome procedimento 2</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor tempora, dignissimos inventore numquam nam iste veritatis ipsa illum maiores ea et recusandae ducimus doloremque suscipit. Laborum et nam officiis!
-                    </p>
-                </div>
-            </div>
-          </article>
+          <li>
+            <button>
+              <figure>
+                <img src="procedimento.png" alt="Nome Procedimento">
+                <figcaption>Nome Procedimento</figcaption>
+              </figure>
+            </button>
+          </li>
 
-          <article>
-            <figure>
-                <button onclick="abrirModal('modal-procedimento-3')">
-              <img src="procedimento.png" alt="Nome Procedimento">
-              <figcaption>Nome Procedimento</figcaption>
-                </button>
-            </figure>
-            <div id="modal-procedimento-3" class="modal" style="display: none;">
-                <div class="modal-conteudo">
-                    <span class="fechar" onclick="fecharModal('modal-procedimento-3')">&times;</span>
-                    <img src="procedimento.png" alt="Nome Procedimento">
-                    <h3>Nome procedimento 3</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor tempora, dignissimos inventore numquam nam iste veritatis ipsa illum maiores ea et recusandae ducimus doloremque suscipit. Laborum et nam officiis!
-                    </p>
-                </div>
-            </div>
-          </article>
-
-          <article>
-            <figure>
-                <button onclick="abrirModal('modal-procedimento-4')">
-              <img src="procedimento.png" alt="Nome Procedimento">
-              <figcaption>Nome Procedimento</figcaption>
-                </button>
-            </figure>
-            <div id="modal-procedimento-4" class="modal" style="display: none;">
-                <div class="modal-conteudo">
-                    <span class="fechar" onclick="fecharModal('modal-procedimento-4')">&times;</span>
-                    <img src="procedimento.png" alt="Nome Procedimento">
-                    <h3>Nome procedimento 4</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor tempora, dignissimos inventore numquam nam iste veritatis ipsa illum maiores ea et recusandae ducimus doloremque suscipit. Laborum et nam officiis!
-                    </p>
-                </div>
-            </div>
-          </article>
-
-          <article>
-            <figure>
-                <button onclick="abrirModal('modal-procedimento-5')">
-              <img src="procedimento.png" alt="Nome Procedimento">
-              <figcaption>Nome Procedimento</figcaption>
-                </button>
-            </figure>
-            <div id="modal-procedimento-5" class="modal" style="display: none;">
-                <div class="modal-conteudo">
-                    <span class="fechar" onclick="fecharModal('modal-procedimento-5')">&times;</span>
-                    <img src="procedimento.png" alt="Nome Procedimento">
-                    <h3>Nome procedimento 5</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor tempora, dignissimos inventore numquam nam iste veritatis ipsa illum maiores ea et recusandae ducimus doloremque suscipit. Laborum et nam officiis!
-                    </p>
-                </div>
-            </div>
-          </article>
+          <li>
+            <button onclick="abrirModal(2)">
+              <figure>  
+                <img src="procedimento.png" alt="Nome Procedimento">
+                <figcaption>Nome Procedimento</figcaption>
+              </figure>
+            </button>
+          </li>
+          <li>
+            <button onclick="abrirModal(3)">
+              <figure>
+                <img src="procedimento.png" alt="Nome Procedimento">
+                <figcaption>Nome Procedimento</figcaption>
+              </figure>
+            </button>
+          </li>
+          <li>
+            <button onclick="abrirModal(4)">
+              <figure>
+                <img src="procedimento.png" alt="Nome Procedimento">
+                <figcaption>Nome Procedimento</figcaption>
+              </figure>
+            </button>
+          </li>
+        </ul>
     </section>
-
-    <div style="height: 300px;">
-        <!-- Simulando um espaço entre as seções -->
-    </div>
-
-    <hr>
     <section id="agendamentos">
         <h2>Agendamentos</h2>
-
         <div class="canais-contato">
             <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
-                11 99999-9999<br>
+                11 99999-9999
             </a>
             <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
                 @villascabellos
@@ -256,12 +122,6 @@
     </section>
 
     </section>
-
-    <div style="height: 300px;">
-        <!-- Simulando um espaço entre as seções -->
-    </div>
-
-    <hr>
     <section id="localizacao">
       <h2>Localização</h2>
         <iframe 
@@ -277,26 +137,9 @@
 
   </main>
 
-<!-- *** Retirar script *** -->  
-  <script>
-    function abrirModal(id) {
-    document.getElementById(id).style.display = 'block';
-  }
-
-  function fecharModal(id) {
-    document.getElementById(id).style.display = 'none';
-  }
-
-  window.onclick = function(event) {
-    const modais = document.querySelectorAll(".modal");
-    modais.forEach(modal => {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    });
-  }
-  </script>
     <footer>
         <p>&copy; 2025 Villa's Cabellos. Todos os direitos reservados.</p>
+    </footer>
+    <script src="assets/script.js"></script>
   
 </body>

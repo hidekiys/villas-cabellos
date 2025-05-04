@@ -1,0 +1,27 @@
+[
+    {
+        "titulo":"Procedimento 1",
+        "img":"assets/img/0.jpg",
+        "descricao":"descricao do procedimento"
+    },
+    {
+        "titulo":"Procedimento 2",
+        "img":"assets/img/1.jpg",
+        "descricao":"descricao do procedimento"
+    },
+    {
+        "titulo":"Procedimento 3",
+        "img":"assets/img/2.jpg",
+        "descricao":"descricao do procedimento"
+    },
+    {
+        "titulo":"Procedimento 4",
+        "img":"assets/img/3.jpg",
+        "descricao":"descricao do procedimento"
+    },
+    {
+        "titulo":"Procedimento 5",
+        "img":"assets/img/4.jpg",
+        "descricao":"descricao do procedimento"
+    }
+]
